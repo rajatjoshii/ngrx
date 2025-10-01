@@ -4,6 +4,10 @@
     <p>Welcome to your Angular + NgRx practice workspace.</p>
   </header>
   <section class="content">
+    <button (click)="increment()">+</button>
+    <button (click)="decrement()">-</button>
+    <button (click)="reset()">Reset</button>
+    <p>{{count$ | async}}</p>
     <router-outlet></router-outlet>
   </section>
 </main>
