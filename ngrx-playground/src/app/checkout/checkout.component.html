@@ -1,0 +1,11 @@
+<p>SubTotal {{cartTotal$ | async}}</p>
+
+@for(item of cartItems$ | async; track item.id){
+    <div>{{item.title}} : {{item.quantity * item.price}}</div>
+    <button (click)="increment(item)">+</button>
+    <button (click)="decrement(item)">-</button>
+    <button (click)="delete(item)">Remove</button>
+} @empty{
+    <div>No items to display</div>
+}
+

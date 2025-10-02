@@ -4,12 +4,13 @@ import { Store } from '@ngrx/store';
 import { selectCount } from './counter/counter.selectors';
 import { increment, decrement, reset } from './counter/counter.actions';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [RouterOutlet, CommonModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

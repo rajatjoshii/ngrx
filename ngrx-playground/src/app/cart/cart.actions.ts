@@ -4,4 +4,4 @@ export const addItem = createAction('[Cart] Add Item', props<{item: {id:string,t
 
 export const removeItem = createAction('[Cart] Remove Item', props<{item: {id:string}}>());
 
-export const decreaseItem = createAction('[Cart] Remove Item', props<{item: {id:string}}>());
+export const decreaseItem = createAction('[Cart] Decrease Item', props<{item: {id:string}}>());
