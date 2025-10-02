@@ -1,13 +1,15 @@
+<app-header style="cursor: pointer;"></app-header>
+
 <main class="main">
   <header class="header">
     <h1>{{ title }}</h1>
     <p>Welcome to your Angular + NgRx practice workspace.</p>
   </header>
   <section class="content">
-    <button (click)="increment()">+</button>
+    <!-- <button (click)="increment()">+</button>
     <button (click)="decrement()">-</button>
     <button (click)="reset()">Reset</button>
-    <p>{{count$ | async}}</p>
+    <p>{{count$ | async}}</p> -->
     <router-outlet></router-outlet>
   </section>
 </main>

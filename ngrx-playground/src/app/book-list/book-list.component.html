@@ -1,0 +1,8 @@
+<h2>Available Books</h2>
+
+@for (book of books; track book.id) {
+  <div>
+    {{ book.title }} - ₹{{ book.price }}
+    <button (click)="addToCart(book)">Add to Cart</button>
+  </div>
+}
