@@ -32,3 +32,11 @@ npx ng generate @ngrx/schematics:store State --module app
 - `src/styles.scss`: Global styles.
 
 NgRx packages (`@ngrx/store`, `@ngrx/effects`, `@ngrx/store-devtools`, `@ngrx/entity`, and `@ngrx/router-store`) are already declared in `package.json`.
+
+## This project has an Add to Cart implementation done via state management ngrx.
+
+A localStorageSyncReducer has also been added to the cart part of the store so that even on page refresh, browser close the value in the cart will
+persist. 
+This is not exaclty how the cart is managed at amazon they do it on the server side caching or database storage.
+A more adequate implementation of localstorage would be to store form information in multi page form.
+
