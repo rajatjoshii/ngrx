@@ -10,7 +10,7 @@ npm install
 npm start
 ```
 
-## This project has a Add to Cart implementation done via state management ngrx.
+## This project has an Add to Cart implementation done via state management ngrx.
 
 A localStorageSyncReducer has also been added to the cart part of the store so that even on page refresh, browser close the value in the cart will
 persist. 
