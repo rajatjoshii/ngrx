@@ -10,6 +10,16 @@
     <button (click)="decrement()">-</button>
     <button (click)="reset()">Reset</button>
     <p>{{count$ | async}}</p> -->
+    <div *ngIf="!isLoggedIn; else userBlock">
+      <button (click)="logIn()">Login</button>
+    </div>
+
+    <ng-template #userBlock>
+      <div>
+        <p>Welcome, {{ username }}</p>
+        <button (click)="logOut()">Logout</button>
+      </div>
+    </ng-template>
     <router-outlet></router-outlet>
   </section>
 </main>
