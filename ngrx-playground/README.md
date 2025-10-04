@@ -40,3 +40,14 @@ persist.
 This is not exaclty how the cart is managed at amazon they do it on the server side caching or database storage.
 A more adequate implementation of localstorage would be to store form information in multi page form.
 
+## AWS Cognito based login logout added - OAuth implemented
+
+OAuth Protocol has a set of rules that defines how login, token management has to be done. 
+eg.  oauth: {
+            domain: 'us-east-1vjar1mhdi.auth.us-east-1.amazoncognito.com',
+            scopes: ['openid', 'email', 'phone'],
+            redirectSignIn: ['http://localhost:4200/'],
+            redirectSignOut: ['http://localhost:4200/'],
+            responseType: 'code',
+          },
+          it requires any library implementing Oauth to pass these. Here we are using Amplify library to implement OAuth along with Cognito.
